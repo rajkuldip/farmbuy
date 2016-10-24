@@ -1,0 +1,140 @@
+.header {
+	position: relative;
+	height: 110px;
+	background-color: $baseBlue;
+	color: $primaryWhite;
+	font-family: 'Libre Caslon Text', 'Helvetica', Arial;
+	padding: 0 0 50px;
+	width: 100%;
+	font-size: 1em;
+	.secondaryNav {
+		position: absolute;
+		bottom:0;
+		display: table;
+		background-color: $primaryWhite;
+		width: 100%;
+		left: 0;
+		height: 50px;
+		font-family: 'Open Sans SemiBold', Helvetica, Arial;
+		a {
+			display: table-cell;
+			width: 50%;
+			height: 46px;
+			border-bottom: 4px solid $baseGrey;
+			text-align: center;
+			vertical-align: middle;
+			&.active {
+				border-bottom: 4px solid $baseGreen;
+				color: $baseGreen;
+			}
+		}
+	}
+	.navbar {
+		background: $baseBlue;
+		border: 0;
+		.navbar-header {
+			.navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus {
+				background: transparent;
+				border: none;
+				.icon-bar {
+					background-color: $primaryWhite;
+				}
+			}
+			.navbar-brand {
+				padding-left: 50px;
+				font-weight: bold;
+				letter-spacing: .02em;
+				position: relative;
+				&:before {
+					content: '';
+					width: 28px;
+					height: 31px;
+					position: absolute;
+					left: 15px;
+					top: 10px;
+					background: url('/images/logo.png') 0 0 no-repeat;
+				}
+				color: $primaryWhite;
+				.green {
+					color: $baseGreen;
+				}
+			}
+		}
+		.navbar-nav {
+			li {
+				font-family: 'Open Sans', Helvetica, Arial;
+				> a {
+					color: $primaryWhite;
+				}
+				&.active {
+					> a {
+						color: $primaryBlack;
+					}
+				}	
+			}
+		}
+	}
+	.signin {
+		display: none;
+	}
+	@media screen and (min-width:1024px) {
+		height: 50px;
+		.content {
+			width: 100%;
+		}
+		.secondaryNav {
+			position: relative;
+		    float: left;
+		    background: transparent;
+		    height: 50px;
+		    padding: 10px 0;
+		    width: 20%;
+		    a {
+	    	    width: 50px;
+			    display: inline-block;
+			    border: 0;
+			    height: auto;
+			    font-size: 1.1em;
+			    border: 0; 
+			 	padding: 5px;
+			    border-radius: 5px;
+			    text-align: left;
+			    &.active {
+			    	border: 0;
+			    	background: $baseGreen;
+			    	color: $primaryWhite;
+			    	text-align: center;
+			    	margin-right: 15px;
+			    }
+		    }
+		}
+		.navbar {
+		    margin: 0;
+		    float: left;
+		    width: 60%;
+		    text-align: center;
+		    .navbar-header {
+		    	display: none;
+		    }
+		    .navbar-nav {
+		    	text-align: center;
+		    	float: none;
+		    	li {
+		    		float: none;
+		    		display: inline-block;
+		    	}
+		    }
+		}
+		.signin {
+			font-family: 'Open Sans', Helvetica, Arial;
+			float: right;
+			display: inline-block;
+			padding: 15px 0;
+			a {
+				color: $baseGreen;
+				font-size: 1.1em;
+				text-decoration: none;
+			}
+		}
+	}
+}

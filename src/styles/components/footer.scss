@@ -1,0 +1,58 @@
+.footer {
+    background: $primaryWhite;
+    .content {
+        padding: 90px 0;
+        .links {
+            float: left;
+            margin: 0;
+            color: #29363b;
+            padding: 0;
+            font-family: open sans;
+            a {
+                border-right: 1px solid #dedede;
+                &.last {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    li {
+        float: left;
+        list-style: none;
+        a {
+            color: #29363b;
+            display: inline-block;
+            margin-right: 15px;
+            padding-right: 15px;    
+        }
+    }
+    .social {
+        float: right;
+        border: none;
+        li {
+            border: 1px solid #dedede;
+            padding: 7px 5px;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            &.facebook {
+                padding: 7px 10px;
+            }
+        }
+        a {
+            float: right;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            color: #557b83;
+        }
+    }
+    .certificate {
+        height: 65px;
+        text-align: center;
+        background: #5b5151;
+        color: #9c9595;
+        padding: 22px 0;
+    }
+}

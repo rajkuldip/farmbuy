@@ -1,0 +1,14 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	background: $darkBlue;
+}
+#app {
+	@media screen and (min-width:1024px) {
+		.content {
+			width: 1024px;
+			margin: 0 auto;
+		}
+	}
+}

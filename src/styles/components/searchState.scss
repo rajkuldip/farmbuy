@@ -1,0 +1,61 @@
+.searchState {
+	width: 100%;
+	height: 1239px;
+	background: $darkBlue url('/images/state-bg.jpg') center center no-repeat;
+	text-align: center;
+	.content {
+		> h3 {
+			color: $primaryWhite;
+			font-family: Libre Caslon Text;
+			text-align: center;
+			padding: 70px 0 40px;
+			margin-bottom: 50px;
+			margin-top: 0;
+			font-size:2.5em;
+			position: relative;
+			&:after {
+				content: '';
+				width: 50px;
+				left: 48%;
+				position: absolute;
+				bottom: 0;
+				height: 2px;
+				background: $primaryWhite;
+			}
+		}
+	}
+	.flexBox {
+		display: flex;
+		text-align: left;
+		.col1, .col2 {
+			margin-right: 20px;
+		}
+		.col {
+			.farm {
+				margin-bottom: 20px;
+				position: relative;
+				.info {
+					position: absolute;
+					bottom: 0;
+					left: 15px;
+					right: 0;
+					h3 {
+						color: $primaryWhite;
+					    text-transform: capitalize;
+					    font-size: 1.5em;
+					    font-family: Libre Caslon Text;
+					}
+					p {
+						color: #83b819;
+    					font-family: Open Sans Italics;
+					}
+				}
+			}
+		}
+	}
+	.teaser {
+		margin-top: 90px;
+		text-align: center;
+		margin: 80px;
+	}
+}

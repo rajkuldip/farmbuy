@@ -1,0 +1,56 @@
+$primaryWhite: #ffffff;
+$primaryBlack: #000000;
+
+$baseBlue: #1e4456;
+$baseGreen: #94c11f;
+$baseDarkGreen: #239619;
+$baseGrey: #c5c5c5;
+$darkBlue: #18242b;
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/Open-Sans/OpenSans-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("/fonts/Open-Sans/OpenSans-Bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url("/fonts/Open-Sans/OpenSans-SemiBold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Italics';
+  src: url("/fonts/Open-Sans/OpenSans-Italic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("/fonts/Open-Sans/OpenSans-Light.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  src: url("/fonts/Libre-Caslon-Text/fonts/OTF/LibreCaslonText-Regular.otf") format('Opentype'), url("/fonts/Libre-Caslon-Text/fonts/TTF/LibreCaslonText-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Caslon Text Bold';
+  src: url("/fonts/Libre-Caslon-Text/fonts/OTF/LibreCaslonText-Bold.otf") format('Opentype'), url("/fonts/Libre-Caslon-Text/fonts/TTF/LibreCaslonText-Bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Caslon Italic';
+  src: url("/fonts/Libre-Caslon-Text/fonts/OTF/LibreCaslonText-Italic.otf") format('Opentype'), url("/fonts/Libre-Caslon-Text/fonts/TTF/LibreCaslonText-Italic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

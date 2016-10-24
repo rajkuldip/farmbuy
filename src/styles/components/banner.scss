@@ -1,0 +1,55 @@
+.banner {
+	width: 100%;
+	height: 704px;
+	background: url('/images/banner-bg.jpg') center  center no-repeat;
+	display: table;
+	.data {
+		text-align: center;
+		vertical-align: middle;
+		height: 100%;
+		display: table-cell;
+	}
+	.logo {
+		font-family: 'Libre Caslon Text Bold';
+		font-size: 3em;
+		color: $primaryWhite;
+		margin-bottom: 125px;
+		position: relative;
+		display: inline-block;
+		padding-left: 100px;
+		font-weight: bold;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -15px;
+			left: 0;
+			width: 78px;
+			height: 85px;
+			background: url('/images/logo-large.png') center center no-repeat;
+		}
+		span {
+			color: $baseGreen;
+		}
+	}
+	.controls {
+		margin-right: 10px;
+		input[type='text'] {
+			width: 505px;
+		}
+	}
+	.btn-success {
+		background-color: $baseDarkGreen;
+		border-color: $baseDarkGreen; 
+	}
+	.form-inline {
+		display: inline-block;
+		width: 736px;
+		font-family: 'Open Sans', Helvetica, Arial;
+		.checkSuburb {
+			float: left;
+			margin-left: 8px;
+			color: $primaryWhite;
+			font-weight: normal;
+		}
+	}
+}
