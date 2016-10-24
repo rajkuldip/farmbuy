@@ -2,7 +2,7 @@
 	height: 632px;
 	background: $primaryWhite;
 	.featurePropertyContent {
-		padding: 70px 0;
+		padding: 0 0 70px;
 		.slick-slide {
 			height: 340px;
 			margin-right: 20px;
@@ -11,7 +11,17 @@
 			opacity: .2;
 			&.slick-active {
 				opacity: 1;
-			}
+			} 
+		}
+		.slick-prev {
+			position: absolute;
+			left: 0;
+			top: 45%;
+		}
+		.slick-next {
+			position: absolute;
+			right: 0;
+			top: 45%;
 		}
 		.imageContainer {
 			height: 220px;
@@ -23,6 +33,24 @@
 				font-size: 2.3em;
 				color: $primaryWhite;
 
+			}
+		}
+		> h3 {
+			font-family: Libre Caslon Text;
+			text-align: center;
+			padding: 70px 0 40px;
+			margin-bottom: 50px;
+			margin-top: 0;
+			font-size:2.5em;
+			position: relative;
+			&:after {
+				content: '';
+				width: 50px;
+				left: 48%;
+				position: absolute;
+				bottom: 0;
+				height: 2px;
+				background: $primaryBlack;
 			}
 		}
 		.otherInfo {
