@@ -34,7 +34,7 @@
 	.controls {
 		margin-right: 10px;
 		input[type='text'] {
-			width: 505px;
+			width: 475px;
 		}
 	}
 	.btn-success {
@@ -47,9 +47,13 @@
 		font-family: 'Open Sans', Helvetica, Arial;
 		.checkSuburb {
 			float: left;
-			margin-left: 8px;
 			color: $primaryWhite;
 			font-weight: normal;
+			label {
+				margin-left: 5px;
+				font-weight: normal;
+				font-size: .9em;
+			}
 		}
 	}
 }

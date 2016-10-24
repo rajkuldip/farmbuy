@@ -12,9 +12,14 @@ class Banner extends Component {
 							<div className="form-group controls">
 							    <label className="sr-only" htmlFor="selectSuburb"></label>
 							    <select id="selectSuburb" name="selectSuburb" className="form-control">
-							        <option>Select State</option>
-							        <option>Select State</option>
-							        <option>Select State</option>
+							    	<option>Select State</option>
+							    	{
+							    		this.props.states.map((state) => {
+							    			return (
+							    				<option value={state.abbr}>{state.name}</option>
+							    			);
+							    		})
+							    	}
 							    </select>
 							</div>
 							<div className="form-group controls">
@@ -23,8 +28,8 @@ class Banner extends Component {
 							</div>
 							<button type="submit" className="btn btn-success">Search</button>
 							<div className="form-group controls checkSuburb">
-							    <input type="checkBox" className="form-control" id="searchField" />
-							    <label htmlFor="searchField">Surrounding suburbs</label>
+							    <input type="checkBox" className="form-control" id="suburbCheck" />
+							    <label htmlFor="suburbCheck">Surrounding suburbs</label>
 							</div>
 						</form>
 					</div>

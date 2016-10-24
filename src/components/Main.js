@@ -82,7 +82,7 @@ class AppComponent extends React.Component {
 		return (
       		<div className="main">
         		<Header />
-        		<Banner />
+        		<Banner states={this.state.states} />
         		<Carousel property={this.state.propertyState}/>
         		<StateSearch farms={this.state.farms} states={this.state.states} />
         		<MortageCalc />
