@@ -13,6 +13,9 @@
                 &.last {
                     border-right: none;
                 }
+                &:hover {
+                    color: #d6d809;
+                }
             }
         }
     }
@@ -55,7 +58,8 @@
         color: #9c9595;
         padding: 22px 0;
     }
-    @media screen and (max-width:767px) {
+
+    @media screen and (max-width:1024px) {
         .content {
             padding: 54px 0;
             .links {

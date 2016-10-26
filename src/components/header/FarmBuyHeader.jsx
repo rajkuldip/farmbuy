@@ -10,7 +10,7 @@ class FarmBuyHeader extends Component {
 						<a href="#" aria-label='Buy' title='Buy' className="active">Buy</a>
 						<a href="#" aria-label='Sell' title='Sell'>Sell</a>
 					</div>
-					<nav className="navbar navbar-default">
+					<nav className="navbar navbar-default navbar-fixed-top">
 					  <div className="container-fluid">
 					    <div className="navbar-header">
 					    	<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">

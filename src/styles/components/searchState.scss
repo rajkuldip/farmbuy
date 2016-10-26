@@ -25,12 +25,14 @@
 		}
 	}
 	.flexBox {
-		display: flex;
 		text-align: left;
-		.col1, .col2 {
-			margin-right: 20px;
-		}
 		.col {
+			display: flex;
+		    flex-direction: column;
+		    flex-wrap: wrap;
+		    height: 780px;
+		    align-content: space-around;
+		    width: 1024px;
 			.farm {
 				margin-bottom: 20px;
 				position: relative;
@@ -57,12 +59,31 @@
 		margin-top: 90px;
 		text-align: center;
 		margin: 80px;
+		img {
+			width: 100%;
+		}
+	}
+	@media screen and (min-width:768px) and (max-width:1024px) {
+			height: auto;
+			padding-bottom: 50px;
+			.content {
+				.flexBox {
+					.col {
+						width: 100%;
+						height: 625px;
+						padding: 4px;
+					}
+				}
+				.teaser {
+					margin: 15px;
+				}
+			}
 	}
 	@media screen and (max-width:767px) {
 			background: #64a9cb url('/images/state-bg.jpg') center center no-repeat;
 			height: auto;
 			background-blend-mode: lighten;
-			.content {
+			.content {		
 				>h3 {
 					font-size: 1.7em;
 					padding: 43px 0 20px;
@@ -71,6 +92,9 @@
 					display: block;
 					.col {
 						margin: 0 15px;
+						width: 	92%;
+						display: block;
+						height: auto;
 						.farm {
 							width: 100%;
 							img {
