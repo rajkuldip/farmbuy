@@ -6,9 +6,8 @@ class Property extends Component {
 		return(
 			<div className="tile">
 				<div className="imageContainer">
-					<img src='/images/tile1.jpg' title={this.props.featureProperty.category} />
+					<img src={`/images/${this.props.featureProperty.number}_${this.props.featureProperty.postCode}.jpg`} title={this.props.featureProperty.category} />
 					<span>${this.props.featureProperty.price}</span>
-					<div className="googleMap"></div>
 				</div>
 				<div className="otherInfo">
 					<p className="category">{this.props.featureProperty.category}</p>
@@ -19,6 +18,7 @@ class Property extends Component {
 							<span>{this.props.featureProperty.acres}AC</span>
 						</div>
 					</div>
+					<img src="/images/sydney.png" alt="NSW" />
 				</div>
 			</div>
 		);

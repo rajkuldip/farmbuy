@@ -58,4 +58,33 @@
 		text-align: center;
 		margin: 80px;
 	}
+	@media screen and (max-width:767px) {
+			background: #64a9cb url('/images/state-bg.jpg') center center no-repeat;
+			height: auto;
+			background-blend-mode: lighten;
+			.content {
+				>h3 {
+					font-size: 1.7em;
+					padding: 43px 0 20px;
+				}
+				.flexBox {
+					display: block;
+					.col {
+						margin: 0 15px;
+						.farm {
+							width: 100%;
+							img {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		.teaser {
+			margin: 80px 0 40px;
+			img {
+				width:100%;
+			}
+		}
+	}
 }

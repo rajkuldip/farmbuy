@@ -1,68 +1,99 @@
 .farmClac {
-	width: 1024px;
-	margin: 0 auto 100px;
-	position: relative;
-	height: 320px;
-	>p {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		margin: 0;
-		padding-top: 10px;
-		color: $primaryWhite;
-		font-family: 'Open Sans Italics';
-		opacity: .25;
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 20px;
-			height: 1px;
-			background: $primaryWhite;
-		}
+    width: 1024px;
+    margin: 0 auto 100px;
+    position: relative;
+    height: 320px;
+    >span {
+        background: url('/images/mortage-bg.jpg');
+    }
+    >p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding-top: 10px;
+        color: $primaryWhite;
+        font-family: 'Open Sans Italics';
+        opacity: .25;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 1px;
+            background: $primaryWhite;
+        }
 
-	}
-	.calc {
-		width: 50%;
-	    position: absolute;
-	    bottom: 0;
-	    right: 0;
-	    background: #183444;
-	    color: white;
-	    padding: 40px 40px 30px;
-	    border-radius: 5px;
-	    overflow: hidden;
-	    span {
-	    	position: absolute;
-		    bottom: 0;
-		    right: 0;
-		    font-size: 9em;
-		    font-family: 'Libre Caslon Text';
-		    line-height: 0.7em;
-		    opacity: .05;
-	    }
-	    a {
-	    	background: #83b819;
-	    	border-radius: 5px;
-	    	padding: 5px 10px;
-	    	text-decoration: none;
-	    	color: $primaryWhite;
-	    	display: inline-block;
-	    	margin-top: 20px;
-	    }
-	    h3 {
-	    	position: relative;
-	    	font-family: 'Libre Caslon Text';
-	    	font-size: 2.4em;
-	    	&:before {
-	    		content: '';
-	    		top: -20px;
-	    		width: 30px;
-	    		height: 1px;
-	    		background: $primaryWhite;
-	    		position: absolute;
-	    	}
-	    }
-	}
+    }
+    .calc {
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #183444;
+        color: white;
+        padding: 40px 40px 30px;
+        border-radius: 5px;
+        overflow: hidden;
+        span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 9em;
+            font-family: 'Libre Caslon Text';
+            line-height: 0.7em;
+            opacity: .05;
+        }
+        a {
+            background: #83b819;
+            border-radius: 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: $primaryWhite;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        h3 {
+            position: relative;
+            font-family: 'Libre Caslon Text';
+            font-size: 2.4em;
+            &:before {
+                content: '';
+                top: -20px;
+                width: 30px;
+                height: 1px;
+                background: $primaryWhite;
+                position: absolute;
+            }
+        }
+    }
+    @media screen and (max-width:767px) {
+        width: 100%;
+        padding: 15px;
+        height: auto;
+        margin-bottom: 50px;
+        > img {
+            border-radius: 5px;
+            position: absolute;
+            width: 80%;
+        }
+        .calc {
+            width: 94%;
+            position: relative;
+            margin-left : 6%;
+            margin-top: 40%;
+            padding: 25px;
+            h3 {
+                font-size: 1.6em;
+            }
+            a {
+                padding: 8px 10px;
+                width: 100%;
+                text-align: center;
+                position: relative;
+            }
+
+        }
+    }
 }

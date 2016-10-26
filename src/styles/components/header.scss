@@ -32,6 +32,7 @@
 	.navbar {
 		background: $baseBlue;
 		border: 0;
+		z-index: 1;
 		.navbar-header {
 			.navbar-toggle, .navbar-toggle:hover, .navbar-toggle:focus {
 				background: transparent;

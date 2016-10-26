@@ -50,7 +50,8 @@ class StateSearch extends Component {
 								return (
 						 			<div className="farm">
 										<a href="#" alt={state.name} >
-						 					<img src={`/images/${state.abbr}.png`} title={state.name}  />
+						 					<img src={`/images/${state.abbr}.png`} title={state.name} className="hidden-xs"  />
+						 					<img src={`/images/${state.abbr}-mobile.png`} title={state.name} className="visible-xs" />
 						 					<div className='info'>
 						 						<h3>{state.name}</h3>
 						 						<p>{state.number} farms for sale</p>
@@ -86,7 +87,8 @@ class StateSearch extends Component {
 								return (
 									<div className="farm">
 										<a href="#" alt={state.name} >
-						 					<img src={`/images/${state.abbr}.png`} title={state.name}  />
+						 					<img src={`/images/${state.abbr}.png`} title={state.name} className="hidden-xs"  />
+						 					<img src={`/images/${state.abbr}-mobile.png`} title={state.name} className="visible-xs" />
 						 					<div className='info'>
 						 						<h3>{state.name}</h3>
 						 						<p>{state.number} farms for sale</p>

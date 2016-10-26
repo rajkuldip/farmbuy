@@ -57,3 +57,42 @@
 		}
 	}
 }
+@media screen and (max-width:767px) {
+		.banner {
+			height: 215px;
+			.form-inline {
+				width: 100%;
+	    		display: block;
+	    		position: relative;
+			}
+			.controls {
+				input[type='text'] {
+					display: inline-block;
+					width: 72%;
+				}
+			}
+			.btn {
+				position: absolute;
+				bottom: 0;
+				right: 68px;
+			}
+			.fa {
+				position: absolute;
+    			top: 10px;
+    			right: 80px;
+   				color: #39a637;
+   				font-size: 1.3em;
+			}
+			.checkSuburb {
+				width: 100%;
+				text-align: left;
+				input {
+					height: 15px;
+    				display: inline-block;
+    				width: auto;
+    				margin-left: 54px;
+    				float: left;
+				}
+			}
+		}
+}
