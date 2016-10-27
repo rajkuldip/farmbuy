@@ -51,8 +51,8 @@ class Carousel extends Component {
 	  		speed: 300,
 	  		slidesToShow: 3,
 	  		slidesToScroll: 3,
-	  		nextArrow: '<i className="fa fa-arrow-right"></i>',
-  			prevArrow: '<i className="fa fa-arrow-left"></i>',
+	  		nextArrow: '<i class="fa fa-arrow-right"></i>',
+  			prevArrow: '<i class="fa fa-arrow-left"></i>',
   			centerMode: true,
 	  		responsive: [{
 	      		breakpoint: 1024,
